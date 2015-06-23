@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				B12447B71B3989DE00BE0FBD /* PBXTargetDependency */,
 				B129FF551B385CEC000C89AE /* PBXTargetDependency */,
 				B129FF571B385CEC000C89AE /* PBXTargetDependency */,
 			);
@@ -22,6 +23,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B12447A11B39898600BE0FBD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B129FF6B1B386CF9000C89AE /* AudioToolbox.framework */; };
+		B12447A21B39898600BE0FBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C151B0DEEA800FAB8A6 /* QuartzCore.framework */; };
+		B12447A31B39898600BE0FBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C131B0DEEA200FAB8A6 /* UIKit.framework */; };
+		B12447A41B39898600BE0FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C111B0DEE9C00FAB8A6 /* Foundation.framework */; };
+		B12447A51B39898600BE0FBD /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C0F1B0DEE9500FAB8A6 /* Metal.framework */; };
+		B12447BE1B398A1800BE0FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447B91B398A1800BE0FBD /* AppDelegate.m */; };
+		B12447BF1B398A1800BE0FBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12447BA1B398A1800BE0FBD /* Images.xcassets */; };
+		B12447C01B398A1800BE0FBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12447BB1B398A1800BE0FBD /* LaunchScreen.xib */; };
+		B12447C11B398A1800BE0FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447BC1B398A1800BE0FBD /* main.m */; };
+		B12447C21B398A1800BE0FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12447BD1B398A1800BE0FBD /* Main.storyboard */; };
+		B12447C91B398AAE00BE0FBD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447C81B398AAE00BE0FBD /* MainViewController.m */; };
+		B12447CF1B398B1B00BE0FBD /* ComputeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447CE1B398B1B00BE0FBD /* ComputeContext.m */; };
+		B12447D81B398CC800BE0FBD /* MainBundleTextureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447D71B398CC800BE0FBD /* MainBundleTextureProvider.m */; };
+		B12447DB1B398F1E00BE0FBD /* UIImage+MBETextureUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447DA1B398F1E00BE0FBD /* UIImage+MBETextureUtilities.m */; };
+		B12447DE1B398F4700BE0FBD /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447DD1B398F4700BE0FBD /* ImageFilter.m */; };
+		B12447E01B39921E00BE0FBD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = B12447DF1B39921E00BE0FBD /* Shaders.metal */; };
+		B12447E31B3992F500BE0FBD /* SaturationAdjustmentFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447E21B3992F500BE0FBD /* SaturationAdjustmentFilter.m */; };
+		B12447E61B39945D00BE0FBD /* GaussianBlur2DFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B12447E51B39945D00BE0FBD /* GaussianBlur2DFilter.m */; };
 		B129FF031B385B3A000C89AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C151B0DEEA800FAB8A6 /* QuartzCore.framework */; };
 		B129FF041B385B3A000C89AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C131B0DEEA200FAB8A6 /* UIKit.framework */; };
 		B129FF051B385B3A000C89AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE6C111B0DEE9C00FAB8A6 /* Foundation.framework */; };
@@ -67,6 +86,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B12447B61B3989DE00BE0FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1AE6BDE1B0DEE6800FAB8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12447931B39898600BE0FBD;
+			remoteInfo = ImageProcessing;
+		};
 		B129FF541B385CEC000C89AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1AE6BDE1B0DEE6800FAB8A6 /* Project object */;
@@ -84,6 +110,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12447921B39897C00BE0FBD /* ImageProcessing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ImageProcessing-Info.plist"; path = "MetalSamples/ImageProcessing/ImageProcessing-Info.plist"; sourceTree = "<group>"; };
+		B12447B41B39898600BE0FBD /* imageprocessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageprocessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12447B81B398A1800BE0FBD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetalSamples/ImageProcessing/AppDelegate.h; sourceTree = "<group>"; };
+		B12447B91B398A1800BE0FBD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetalSamples/ImageProcessing/AppDelegate.m; sourceTree = "<group>"; };
+		B12447BA1B398A1800BE0FBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MetalSamples/ImageProcessing/Images.xcassets; sourceTree = "<group>"; };
+		B12447BB1B398A1800BE0FBD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = MetalSamples/ImageProcessing/LaunchScreen.xib; sourceTree = "<group>"; };
+		B12447BC1B398A1800BE0FBD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MetalSamples/ImageProcessing/main.m; sourceTree = "<group>"; };
+		B12447BD1B398A1800BE0FBD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MetalSamples/ImageProcessing/Main.storyboard; sourceTree = "<group>"; };
+		B12447C71B398AAE00BE0FBD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MetalSamples/ImageProcessing/MainViewController.h; sourceTree = "<group>"; };
+		B12447C81B398AAE00BE0FBD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MetalSamples/ImageProcessing/MainViewController.m; sourceTree = "<group>"; };
+		B12447CD1B398B1B00BE0FBD /* ComputeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComputeContext.h; path = MetalSamples/ImageProcessing/ComputeContext.h; sourceTree = "<group>"; };
+		B12447CE1B398B1B00BE0FBD /* ComputeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComputeContext.m; path = MetalSamples/ImageProcessing/ComputeContext.m; sourceTree = "<group>"; };
+		B12447D01B398BE800BE0FBD /* TextureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureProvider.h; path = MetalSamples/ImageProcessing/TextureProvider.h; sourceTree = "<group>"; };
+		B12447D31B398BF900BE0FBD /* TextureConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureConsumer.h; path = MetalSamples/ImageProcessing/TextureConsumer.h; sourceTree = "<group>"; };
+		B12447D61B398CC800BE0FBD /* MainBundleTextureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainBundleTextureProvider.h; path = MetalSamples/ImageProcessing/MainBundleTextureProvider.h; sourceTree = "<group>"; };
+		B12447D71B398CC800BE0FBD /* MainBundleTextureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainBundleTextureProvider.m; path = MetalSamples/ImageProcessing/MainBundleTextureProvider.m; sourceTree = "<group>"; };
+		B12447D91B398F1E00BE0FBD /* UIImage+MBETextureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MBETextureUtilities.h"; path = "MetalSamples/ImageProcessing/UIImage+MBETextureUtilities.h"; sourceTree = "<group>"; };
+		B12447DA1B398F1E00BE0FBD /* UIImage+MBETextureUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MBETextureUtilities.m"; path = "MetalSamples/ImageProcessing/UIImage+MBETextureUtilities.m"; sourceTree = "<group>"; };
+		B12447DC1B398F4700BE0FBD /* ImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageFilter.h; path = MetalSamples/ImageProcessing/ImageFilter.h; sourceTree = "<group>"; };
+		B12447DD1B398F4700BE0FBD /* ImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageFilter.m; path = MetalSamples/ImageProcessing/ImageFilter.m; sourceTree = "<group>"; };
+		B12447DF1B39921E00BE0FBD /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = Shaders.metal; path = MetalSamples/ImageProcessing/Shaders.metal; sourceTree = "<group>"; };
+		B12447E11B3992F500BE0FBD /* SaturationAdjustmentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaturationAdjustmentFilter.h; path = MetalSamples/ImageProcessing/SaturationAdjustmentFilter.h; sourceTree = "<group>"; };
+		B12447E21B3992F500BE0FBD /* SaturationAdjustmentFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaturationAdjustmentFilter.m; path = MetalSamples/ImageProcessing/SaturationAdjustmentFilter.m; sourceTree = "<group>"; };
+		B12447E41B39945D00BE0FBD /* GaussianBlur2DFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaussianBlur2DFilter.h; path = MetalSamples/ImageProcessing/GaussianBlur2DFilter.h; sourceTree = "<group>"; };
+		B12447E51B39945D00BE0FBD /* GaussianBlur2DFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaussianBlur2DFilter.m; path = MetalSamples/ImageProcessing/GaussianBlur2DFilter.m; sourceTree = "<group>"; };
 		B129FF0F1B385B3A000C89AE /* texturing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = texturing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B129FF151B385BFE000C89AE /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shared.h; path = MetalSamples/Common/Shared.h; sourceTree = "<group>"; };
 		B129FF161B385BFE000C89AE /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transforms.h; path = MetalSamples/Common/Transforms.h; sourceTree = "<group>"; };
@@ -143,6 +194,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B12447A01B39898600BE0FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12447A11B39898600BE0FBD /* AudioToolbox.framework in Frameworks */,
+				B12447A21B39898600BE0FBD /* QuartzCore.framework in Frameworks */,
+				B12447A31B39898600BE0FBD /* UIKit.framework in Frameworks */,
+				B12447A41B39898600BE0FBD /* Foundation.framework in Frameworks */,
+				B12447A51B39898600BE0FBD /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B129FF021B385B3A000C89AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +232,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B12447911B39894E00BE0FBD /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				B12447C61B398A9200BE0FBD /* Core */,
+				B12447C51B398A6300BE0FBD /* Filters */,
+				B12447C41B398A5900BE0FBD /* UI */,
+				B12447C31B398A2E00BE0FBD /* Resources */,
+				B12447B81B398A1800BE0FBD /* AppDelegate.h */,
+				B12447B91B398A1800BE0FBD /* AppDelegate.m */,
+				B12447BC1B398A1800BE0FBD /* main.m */,
+				B12447C71B398AAE00BE0FBD /* MainViewController.h */,
+				B12447C81B398AAE00BE0FBD /* MainViewController.m */,
+			);
+			name = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		B12447C31B398A2E00BE0FBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B12447921B39897C00BE0FBD /* ImageProcessing-Info.plist */,
+				B12447BA1B398A1800BE0FBD /* Images.xcassets */,
+				B12447BB1B398A1800BE0FBD /* LaunchScreen.xib */,
+				B12447BD1B398A1800BE0FBD /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B12447C41B398A5900BE0FBD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B12447C51B398A6300BE0FBD /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				B12447E41B39945D00BE0FBD /* GaussianBlur2DFilter.h */,
+				B12447E51B39945D00BE0FBD /* GaussianBlur2DFilter.m */,
+				B12447DC1B398F4700BE0FBD /* ImageFilter.h */,
+				B12447DD1B398F4700BE0FBD /* ImageFilter.m */,
+				B12447DF1B39921E00BE0FBD /* Shaders.metal */,
+				B12447E11B3992F500BE0FBD /* SaturationAdjustmentFilter.h */,
+				B12447E21B3992F500BE0FBD /* SaturationAdjustmentFilter.m */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+		B12447C61B398A9200BE0FBD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B12447D91B398F1E00BE0FBD /* UIImage+MBETextureUtilities.h */,
+				B12447DA1B398F1E00BE0FBD /* UIImage+MBETextureUtilities.m */,
+				B12447CD1B398B1B00BE0FBD /* ComputeContext.h */,
+				B12447CE1B398B1B00BE0FBD /* ComputeContext.m */,
+				B12447D01B398BE800BE0FBD /* TextureProvider.h */,
+				B12447D31B398BF900BE0FBD /* TextureConsumer.h */,
+				B12447D61B398CC800BE0FBD /* MainBundleTextureProvider.h */,
+				B12447D71B398CC800BE0FBD /* MainBundleTextureProvider.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		B129FF111B385B48000C89AE /* Texturing */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +352,7 @@
 		B1AE6BDD1B0DEE6800FAB8A6 = {
 			isa = PBXGroup;
 			children = (
+				B12447911B39894E00BE0FBD /* ImageProcessing */,
 				B129FF6B1B386CF9000C89AE /* AudioToolbox.framework */,
 				B129FF121B385BEF000C89AE /* Common */,
 				B129FF111B385B48000C89AE /* Texturing */,
@@ -243,6 +370,7 @@
 			children = (
 				B1AE6BE61B0DEE6800FAB8A6 /* teapot.app */,
 				B129FF0F1B385B3A000C89AE /* texturing.app */,
+				B12447B41B39898600BE0FBD /* imageprocessing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +403,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B12447931B39898600BE0FBD /* ImageProcessing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12447B11B39898600BE0FBD /* Build configuration list for PBXNativeTarget "ImageProcessing" */;
+			buildPhases = (
+				B12447941B39898600BE0FBD /* Sources */,
+				B12447A01B39898600BE0FBD /* Frameworks */,
+				B12447A61B39898600BE0FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageProcessing;
+			productName = MetalSamples;
+			productReference = B12447B41B39898600BE0FBD /* imageprocessing.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B129FEF81B385B3A000C89AE /* Texturing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B129FF0C1B385B3A000C89AE /* Build configuration list for PBXNativeTarget "Texturing" */;
@@ -342,11 +487,22 @@
 				B1AE6BE51B0DEE6800FAB8A6 /* Teapot */,
 				B129FEF81B385B3A000C89AE /* Texturing */,
 				B129FF501B385CE5000C89AE /* ALL */,
+				B12447931B39898600BE0FBD /* ImageProcessing */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B12447A61B39898600BE0FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12447C21B398A1800BE0FBD /* Main.storyboard in Resources */,
+				B12447C01B398A1800BE0FBD /* LaunchScreen.xib in Resources */,
+				B12447BF1B398A1800BE0FBD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B129FF071B385B3A000C89AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +534,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B12447941B39898600BE0FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12447E31B3992F500BE0FBD /* SaturationAdjustmentFilter.m in Sources */,
+				B12447E01B39921E00BE0FBD /* Shaders.metal in Sources */,
+				B12447C11B398A1800BE0FBD /* main.m in Sources */,
+				B12447DB1B398F1E00BE0FBD /* UIImage+MBETextureUtilities.m in Sources */,
+				B12447C91B398AAE00BE0FBD /* MainViewController.m in Sources */,
+				B12447E61B39945D00BE0FBD /* GaussianBlur2DFilter.m in Sources */,
+				B12447BE1B398A1800BE0FBD /* AppDelegate.m in Sources */,
+				B12447D81B398CC800BE0FBD /* MainBundleTextureProvider.m in Sources */,
+				B12447CF1B398B1B00BE0FBD /* ComputeContext.m in Sources */,
+				B12447DE1B398F4700BE0FBD /* ImageFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B129FEF91B385B3A000C89AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +587,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B12447B71B3989DE00BE0FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12447931B39898600BE0FBD /* ImageProcessing */;
+			targetProxy = B12447B61B3989DE00BE0FBD /* PBXContainerItemProxy */;
+		};
 		B129FF551B385CEC000C89AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B1AE6BE51B0DEE6800FAB8A6 /* Teapot */;
@@ -462,6 +640,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B12447B21B39898600BE0FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/MetalSamples/ImageProcessing/ImageProcessing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = imageprocessing;
+			};
+			name = Debug;
+		};
+		B12447B31B39898600BE0FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/MetalSamples/ImageProcessing/ImageProcessing-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = imageprocessing;
+			};
+			name = Release;
+		};
 		B129FF0D1B385B3A000C89AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,6 +799,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B12447B11B39898600BE0FBD /* Build configuration list for PBXNativeTarget "ImageProcessing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12447B21B39898600BE0FBD /* Debug */,
+				B12447B31B39898600BE0FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B129FF0C1B385B3A000C89AE /* Build configuration list for PBXNativeTarget "Texturing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -617,6 +824,7 @@
 				B129FF531B385CE5000C89AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1AE6BE11B0DEE6800FAB8A6 /* Build configuration list for PBXProject "MetalSamples" */ = {
 			isa = XCConfigurationList;
